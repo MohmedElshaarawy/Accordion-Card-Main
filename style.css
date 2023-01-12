@@ -1,0 +1,156 @@
+:root{
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(var(--Soft-blue),var(--Soft-violet));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 350px;
+    background-color: var(--Light-grayish-blue);
+    border-radius: 12px;
+    margin-top: 50px;
+}
+.container .img {
+    width: 230px;
+    position: absolute;
+    top: -95px;
+    left: 60px;
+}
+.img .mobile{
+position: relative;
+bottom: 75px;
+}
+.container .img .woman{
+    width: 100%;
+}
+.main{
+    margin-top: 120px;
+    
+}
+.container h1 {
+    text-align: center;
+    margin: 20px;
+}
+.img :nth-child(2){
+    display: none;
+}
+.img :nth-child(3){
+    position: relative;
+    bottom: 90px;
+}
+.main .QUY{
+    margin-left: 10px;
+}
+.main span{
+    position: relative;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.main p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--Very-dark-grayish-blue);
+    margin-top: -13px;
+}
+.main .QUY img ,i {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.QUY i {
+    display: none;
+}
+.toggle{
+    display: none;
+}
+.toggleArrow{
+    transform: rotate(180deg);
+}
+.QUY .span{
+    color: black;
+    font-weight: 900;
+}
+.attribution{
+    position: absolute;
+    top: 95%;
+    right: 14%;
+    padding:  10px 3px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px solid var( --Light-grayish-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media  Query */
+
+
+@media screen and (min-width:1440px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .img :nth-child(2){ 
+        display: block;
+        position: absolute;
+        top: 121px;
+        right: 325px;
+    }
+    .container .img{
+        width: 450px;
+        top: 30px;
+        left: -80px;
+    }
+    .img :nth-child(3){
+        bottom: 629px;
+        right: 445px;
+    }
+    .main{
+        position: relative;
+        right: 100px;
+        width: 360px;
+        bottom: 30px;
+    }
+    .main i {
+        margin-right: 0;
+        margin-top: o;
+    }
+    .attribution{
+        position: absolute;
+        right: 34%;
+        top: 94%;
+    }
+}
